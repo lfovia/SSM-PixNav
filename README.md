@@ -1,7 +1,7 @@
 # SSM-PixNav: State Space Models for Pixel-Guided Embodied Navigation
 
 <p align="center">
-  <img src="assets/ssm_pixnav_overview.png" width="800">
+  <img src="new.png" width="800">
 </p>
 
 ## SSM-PixNav: State Space Models for Pixel-Guided Embodied Navigation
