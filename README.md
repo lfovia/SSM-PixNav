@@ -81,65 +81,6 @@ pip install habitat-sim
 pip install habitat-lab
 ```
 
-'''---
-
-## Repository Structure
-
-```text
-SSM-PixNav/
-│
-├── configs/
-├── datasets/
-├── checkpoints/
-├── policies/
-│   ├── ssm_policy.py
-│   └── visual_encoder.py
-├── trainers/
-├── evaluation/
-├── scripts/
-└── README.md
-```
-
----
-
-## Pretrained Checkpoints
-
-Pretrained checkpoints will be released upon publication.
-
-| Model      | Dataset | Checkpoint  |
-| ---------- | ------- | ----------- |
-| SSM-PixNav | HM3D    | Coming Soon |
-| SSM-PixNav | MP3D    | Coming Soon |
-
-Place downloaded checkpoints inside:
-
-```text
-checkpoints/
-```
-
----
-
-## Training
-
-Train the SSM navigation policy:
-
-```bash
-python train.py \
-    --config configs/ssm_pixnav.yaml
-```
-
----
-
-## Evaluation
-
-Evaluate the trained policy:
-
-```bash
-python evaluate.py \
-    --checkpoint checkpoints/ssm_pixnav.ckpt
-```
-
----
 
 ## Metrics
 
@@ -151,17 +92,25 @@ We report standard embodied navigation metrics:
 * SoftSPL
 * Episode Length
 
----'''
+---
 
 ## Results
 
-| Method            | SR ↑ | SPL ↑ | DTG ↓ |
-| ----------------- | ---- | ----- | ----- |
-| PixelNav Baseline | TBD  | TBD   | TBD   |
-| SSM-PixNav        | TBD  | TBD   | TBD   |
+HM3D Evaluation Results
+
+| Method | Easy SR | Medium SR | Hard SR |
+|----------|----------|----------|----------|
+| RGB PixNav Baseline | 0.3676 | 0.1739 | 0.1726 |
+| SSM-RGB PixNav | 0.7545 | 0.3091 | 0.2000 |
+| Causal SSM-RGB PixNav | 0.8043 | 0.4808 | 0.2273 |
+| RGBD PixNav | 0.5361 | 0.3571 | 0.1500 |
+| SSM-RGBD PixNav (Mamba) | 0.5736 | 0.2987 | 0.1900 |
+| Causal SSM-RGBD PixNav | 0.6894 | 0.3160 | 0.3000 |
 
 ---
+## Dataset
 
+Dataset will be uploaded to zenodo link. Link will be updated soon.
 ## Acknowledgements
 
 This project builds upon:
@@ -171,16 +120,7 @@ This project builds upon:
 * Pixel Navigation
 
 We thank the authors of these projects for making their code and datasets publicly available.
+We thank the reviewers for the insightful comments that helped shape the work better.
 
 ---
 
-## Citation
-
-```bibtex
-@article{yourname2026ssmpixnav,
-  title={SSM-PixNav: State Space Models for Pixel-Guided Embodied Navigation},
-  author={Author Names},
-  journal={arXiv},
-  year={2026}
-}
-```
