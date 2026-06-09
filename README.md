@@ -5,6 +5,7 @@
 </p>
 
 ## SSM-PixNav: State Space Models for Pixel-Guided Embodied Navigation
+## Read our paper at [openreview](https://openreview.net/forum?id=RmsMd5vdBf). 
 
 This repository contains the official implementation of **SSM-PixNav**, a State Space Model (SSM)-based framework for pixel-guided embodied navigation.
 
