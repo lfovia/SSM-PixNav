@@ -113,7 +113,7 @@ HM3D Evaluation Results
 
 Dataset will be uploaded to zenodo link. Link will be updated soon.
 ## Acknowledgements
-
+This research was supported by Research Centre Imarat (RCI) project RCI/23CR0001/STAR/STAR/CMS-III, DRDO, Government of India.
 This project builds upon:
 
 * Habitat-Sim
