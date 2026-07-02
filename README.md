@@ -111,7 +111,7 @@ HM3D Evaluation Results
 ---
 ## Dataset
 
-Dataset will be uploaded to zenodo link. Link will be updated soon.
+Dataset will be uploaded to Huggingface (https://huggingface.co/datasets/AthiraK/PixNav_dataset).
 ## Acknowledgements
 **This research was supported by Research Centre Imarat (RCI) project RCI/23CR0001/STAR/STAR/CMS-III, DRDO, Government of India.**
 This project builds upon:
